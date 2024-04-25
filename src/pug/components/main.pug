@@ -1,0 +1,127 @@
+main.main#main
+    .wrapper
+        .top-main.row.mb-4
+            .header-top-main.col-sm-12.col-md-6.col-lg-4.col-xl-3
+                h2.text-uppercase.mb-3.fw-normal  про нашу компанію 
+                p.mb-0.fw-normal Наша компанія пропонує ряд
+                p.mb-0.fw-normal цікавих-розважальних послуг, які
+                p.mb-5.fw-normal принесуть вам ряд вражень!
+                a(class="menu-line__button rounded-pill text-uppercase", href="#") Детальніше
+                p.pt-5.focus * - зверніть увагу, зміна ціни може залежати від курсу долара.
+            .col-md-6.col-lg-8.col-xl-9
+                .useful-thinks.row.text-center 
+                    +card('Тур на велосипедах', '335 грн*', 'img/card_img_one.png', 'Подорожуючи  на велосипеді, ви поринете в атмосферу мальовничих гір, чарівнмх краєвидів та шалених пригод.')
+                    +card('Екскурсія на острів', '500 грн*', 'img/card_img_two.png', 'Подорож на острів занурить Вас у незабутнні пригоди. Неймовірна краса  у будь-яку пору року .')
+                    +card('Особливе замовлення', '250 грн*', 'img/card_img_tree.png', 'Обираючи цю подорож, Ви самостійно робите її незабутнбою та не схожою на будь-які інші')
+                    a.all-plans.d-block.text-center.text-uppercase.text-decoration-none.fw-normal.col-12.col-xxl-9.offset-xxl-3.p-0(href="#")
+                        span.position-relative дивитись усі плани
+        hr.mb-5
+        .container-fluid.island
+            .row
+                .col-7.col-xl-4.offset-3.offset-xxl-0.image-container
+                    img.img-fluid(src="img/island.png", alt="Острів")
+                .col.offset-lg-1.offset-xxl-0.about               
+                    h2.text-uppercase Дивовижний безлюдний острів, який зводить людей з розуму
+                    .row
+                        .col.thailand
+                            p.mb-0.fw-normal.pt-1 Пхукет - курортно-туристична Мекка Таїланду.
+                            p.mb-0.fw-normal Білосніжний пісок, і бірюзове море, і мальовничі скелі, а на
+                            p.mb-0.fw-normal них же, трохи вище - буйна тропічна рослинність. Все це
+                            p.mb-4.f-normal можна побачити на власні очі.
+                            .buttons.row.pt-2
+                                .col-md-12.col-lg-6.mb-5
+                                    a(class="menu-line__button rounded-pill text-uppercase", href="#") Замовити тур
+                                .col.mb-5
+                                    a(class="blue-button rounded-pill text-uppercase text-center", href="#") Детальніше
+                        .price.col-sm-12.col-md-4.col-lg-6.text-center.pt-4.mb-4
+                            p.p-i.mb-3 
+                                i 575 грн./день
+                            p.fw-normal В дану вартість входить
+                            p обслуговування персоналу,
+                            p.mb-3 вечеря і захоплюючі історії.
+    .main-text
+        .wrapper
+            .main-text__advertising.row
+                .col
+                    h2.white-h2.pt-5 СПІЙМАЙ ХВИЛЮ
+                    h2.blue.mb-3 ЖИВИ ЯСКРАВО!
+                    p.mb-0 Полюбляєш екстрим та пригоди? Тоді тобі точно до нас! Мрієш
+                    p.mb-0 стати на сапборд, але ніяк не міг наважитсь? Наші досвдчені
+                    p.mb-0 інструктори навчать тебе вміло «піймати хвилі» та відчути себе 
+                    p.mb-5 справжнім сьорфером!
+                    a(class="menu-line__button rounded-pill text-uppercase mb-5", href="#") Детальніше
+                .client.col.col-11.col-lg-6.offset-md-1.offset-lg-0.text-center
+                    a(href="#").mb-3
+                        img(src="img/doblle-points.png", alt="Лапки")
+                    p.about-firm.position-relative.fw-normal Чудова туристична фірма, що повністю виправдала мої очікування від подорожі. Я був приємно вражений екскурсіями, що для мене підібрали, працюють спражні професіонали своєї справи. 
+                    h3.fw-normal Олег Набережний
+                    p.client-p клієнт
+                    img.rounded-circle(src="img/man.png", alt="Клієнт")
+    .special-proposals
+        .wrapper 
+            .special-text
+                h2.text-uppercase.text-center Спеціальні пропозиції тижня
+                p.mb-4.text-center
+                    i Гарячі праозиції, по-швидше обирай і поїхали!
+                .special-proposals-cards.row
+                    +card('Романтична подорож на 2', '2599 грн.', 'img/special-one.png', 'Подорож у найромантичніші куточки світу, занурить вас у дивовижні пейзажі природи.', 'ЗАМОВИТИ')
+                    +card('Велотур', '555 грн.', 'img/special-two.png', 'Бажаєте прокататись з вітерцем, та ще й з критим краєвидом довкола? Тоді швидше замовляй велотур!', 'ЗАМОВИТИ')
+                    +card('На острови!', '1559 грн.', 'img/special-tree.png', 'Хочеш зануритись у тишу, місце де не має натовпу, та панує дмка природа? Тоді вперед за пригодами!', 'ЗАМОВИТИ')
+                    +card('Катання на сьорфінгу', '999 грн', 'img/special-four.png', 'Хочеш отримати екстрим та мега вражень одночасно? Тоді вперед ловити хвилі!', 'ЗАМОВИТИ')
+            hr.mb-5
+    .additional-information.mb-5
+        .wrapper
+            .row 
+                .col-12.col-md-6.col-lg-4.col-xl-3 
+                    p.information.text-uppercase додаткова інформація
+                .col-12.col-md-6.col-lg-4.col-xl-3
+                    figure
+                        figcaption.work-file
+                            .row
+                                .row
+                                    .col
+                                        a(href="#")
+                                            p.work.position-relative.xls.fw-normal.ps-5.mb-3 Графік роботи готелів.xls
+                                        p.mb-2.file.fw-normal.ps-5 Розмір файла: 10Mb
+                                .row
+                                    .col.text-p
+                                        p.mb-0 Розклад роботи усіх наших готелів,  
+                                        p.mb-0 можете знайти за цим посиланням.
+                                        p.mb-5 Та додатково завантажити їх фото.
+                                .row 
+                                    .col
+                                        a(class="rounded-pill text-uppercase download mb-5 position-relative", href="#") скачати
+                .col-12.col-md.col-lg-4.col-xl-3
+                    figure
+                        figcaption.tower-file
+                            .row
+                                .row
+                                    .col
+                                        a(href="#")
+                                            p.tower.position-relative.xls.fw-normal.ps-5 Інформація про харчування.xls
+                                        p.mb-3.file.fw-normal.ps-5 Розмір файла: 10Mb
+                                .row
+                                    .col.text-p
+                                        p.mb-0.fw-normal У будь-якому нашому турі включені  
+                                        p.mb-0.fw-normal сніданки у вартість. Якщо ж
+                                        p.mb-0.fw-normal бажаєте замовити додотково, то
+                                        p.mb-4.fw-normal ознайомтесь з умовами.
+                                .row
+                                    .col
+                                        a(class="rounded-pill text-uppercase download position-relative", href="#") скачати
+                .col-12.col-md.col-lg-4.col-xl-3
+                    figure
+                        figcaption.consultant.text-center
+                            h4.position-relative задати питання
+                            p.mb-0 Скажіть доброго дня 
+                            p.mb-0 нашому консультанту,
+                            p.mb-0 і ми з радістю відповімо 
+                            p.mb-3 на Ваші запитання
+                            p.phone.position-relative
+                                a(href="#")
+                                    img.ps-2(src="img/phone.png", alt="Телефон Консультанта")
+                                a(class="ps-2", href="#") +38 (050) 56 98 511
+                            h3.mb-0 Анна Миколаївна
+                            p.mb-3 консультант
+                            a(href="#")
+                                img.rounded-circle(src="img/woman.png", alt="Консультант")

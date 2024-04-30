@@ -1,8 +1,12 @@
+main
+    background-color: #f5f8fa
 .main-text
-    margin-bottom: 100px
     background: url(../img/main-picture.png) no-repeat
     background-size: cover
     background-position: center
+    +media(1150)
+        h2
+            font-size: 56px
     .client
         padding-top: 65px
         margin-bottom: 197px
@@ -31,14 +35,13 @@
 hr
     border: 1px solid $text
 
-.header-top-main
+.div
     h2
         font-size: 36px
         letter-spacing: 1px
         line-height: 40px
         color: $textDark
         font-family: "Rubik"
-
     p
         font-size: 16px
         line-height: 22px
@@ -48,11 +51,51 @@ hr
     .focus
         color: #bbb
 
+.cards span
+    content: ""
+    width: 60px
+    height: 60px
+    left: 0
+    background: url(../img/background-star.svg)
+
+.all-plans
+    font-size: 12px
+    letter-spacing: 0px
+    color: $price
+    font-family: "Rubik"  
+    .saw::before
+        content: ""
+        position: absolute
+        width: 11px
+        height: 11px
+        top: 1px
+        left: calc(100% + 10px)
+        background: url(../img/blue-cross.png)
+
+.img-fluid 
+    max-width: 100%
+    height: auto
+
++media(1440)
+    .img-fluid 
+        height: 294px
+
 .blue
     color: $price
 
+.container-fluid h2
+    font-size: 26px
+
++media(768)
+    .container-fluid h2
+        font-size: 36px
+
+.price .p-p 
+    font-size: 13px
+    line-height: 20px
+
 .main-text h2 
-    font-size: 56px
+    font-size: 40px
 
 .thailand p
     font-size: 16px
@@ -76,7 +119,7 @@ hr
 
 .island,
 .main-text-button
-    margin-bottom: 100px
+    margin-bottom: 80px
 
 .blue-button,
 .special h3,
@@ -91,6 +134,9 @@ hr
 .consultant a
     font-size: 18px
     line-height: 26px
+
+.consultant h4 
+    line-height: 0
 
 .client .client-p,
 .special p,
@@ -123,6 +169,39 @@ hr
         border-left: transparent
         opacity: 0.102
 
+.cards:hover
+    filter: drop-shadow(0 4px 10.5px rgba(3, 20, 31, .05))
+    background-color: #fff
+    transition: .3s
+
+.cards h3 
+    font-size: 18px
+    line-height: 26px
+    color: $textDark
+    font-family: "Rubik"
+
+.cards a 
+    font-size: 24px
+    line-height: 44px
+    color: $price
+    font-family: "Rubik"
+    &:hover
+        color:$buttoncolor
+        transition: .3s
+
+.cards .text 
+    padding: 0 9px 20px 20px
+    font-size: 13px
+    line-height: 19px
+    color: $text
+    font-family: "Rubik"
+
+.special span
+    content: ""
+    width: 60px
+    height: 60px
+    background: url(../img/background-star.svg)
+
 .special b
     font-size: 24px
     line-height: 44px
@@ -141,7 +220,7 @@ hr
     .order
         font-size: 13px
         letter-spacing: 1px
-        line-height: 110px
+        line-height: 13px
         color: $buttoncolor
         font-family: "Rubik"
         &:hover
@@ -155,7 +234,7 @@ hr
             color: $buttoncolor
             transition: .3s
 
-.special-card-padding a::after
+.special-card-padding .order::after
     content: ""
     position: absolute
     width: 12px
@@ -163,7 +242,6 @@ hr
     top: 2px
     right: -15px
     background: url(../img/arrow.png)
-
 
 .special-card-padding 
     padding: 15px
@@ -191,7 +269,7 @@ hr
         top: 0
         left: 0
         background: url(../img/file.png)
-    a::before
+    .cloud::before
         content: ""
         position: absolute
         width: 15px
@@ -216,7 +294,7 @@ hr
     font-family: "Rubik"
 
 .text-p
-    width: 190px
+    min-width: 250px
     font-size: 13px
     line-height: 19px
     color: $textLight
@@ -225,26 +303,29 @@ hr
 .tower-file
     background: url(../img/tower.png) no-repeat
 
-h4::before
-    content: ""
-    position: absolute
-    left: 0
-    top: 0
-    width: 50px
-    height: 270px
-    border: 4px solid $buttoncolor
-    border-right: transparent
++media(576)
+    h4::before
+        content: ""
+        position: absolute
+        left: 0
+        top: 0
+        width: 50px
+        height: 270px
+        border: 4px solid $buttoncolor
+        border-right: transparent
 
-h4::after
-    content: ""
-    position: absolute
-    top: 0
-    right: 0
-    width: 50px
-    height: 270px
-    border: 4px solid $buttoncolor
-    border-left: transparent
++media(576)
+    h4::after
+        content: ""
+        position: absolute
+        top: 0
+        right: 0
+        width: 50px
+        height: 270px
+        border: 4px solid $buttoncolor
+        border-left: transparent
 
+.price .p-i a:hover,
 .phone a:hover
     color: $buttoncolor
     transition: .3s

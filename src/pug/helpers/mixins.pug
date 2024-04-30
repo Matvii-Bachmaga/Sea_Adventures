@@ -1,31 +1,24 @@
 mixin card(proposails, sell, imgSrc, p)
-    .col-sm-12.col-lg-6.col-xl-4
-        figure
-            figcaption.cards
-                .broshure__card-img
-                    img(src=imgSrc)
-                h3= proposails
-                b= sell
-                p= p
-
-mixin card(proposails, sell, imgSrc, p)
-    .col-sm-12.col-lg-6.col-xl-4
-        figure
-            figcaption.cards
-                .broshure__card-img
-                    img(src=imgSrc)
-                h3= proposails
-                b= sell
-                p= p
+    figure.col-sm-12.col-md-6.col-lg-4.col-xl-3.text-center
+        figcaption.cards.position-relative
+            span.position-absolute
+            .broshure__card-img.mb-4
+                img(src=imgSrc).pt-5
+            h3.mb-2.fw-normal= proposails
+            p.mb-2.fw-normal
+                a(href="#")= sell
+            p.text.text-center.fw-normal= p
                 
-mixin card(info, sell, imgSrc, test, order)
+mixin cards(info, sell, imgSrc, test, order)
     .col-md.col-12
         figure
             figcaption.special
+                span.position-absolute
                 .special__card-img
-                    img(src=imgSrc)
+                    a(href="#")
+                        img(src=imgSrc)
                 .special-card-padding
                     h3= info
-                    p.mb-0= test
+                    p.mb-3= test
                     a.fw-normal.grn(href="#")= sell
                     a.position-relative.fw-normal.ps-5.order(href="#")= order

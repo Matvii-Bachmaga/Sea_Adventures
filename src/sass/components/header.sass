@@ -1,5 +1,4 @@
 .header 
-    margin-bottom: 100px
     background: url(../img/header-picture.png) no-repeat
     background-size: cover
     background-position: center
@@ -31,6 +30,15 @@ hr
         line-height: 24px
         font-style: italic
         font-family: "Rubik"
+    a
+        border: 1px solid transparent
+        background: $buttoncolor
+        padding: 15px 35px
+        &:hover
+            transition: .3s
+            color: $buttoncolor
+            border-color: $buttoncolor
+            background-color: $textLight
 
 +media(1024)
     .h1::before
